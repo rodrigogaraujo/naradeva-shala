@@ -1,19 +1,8 @@
 import React from "react";
 
-import {
-  FaPhone,
-  FaWhatsapp,
-  FaYoutube,
-  FaTwitter,
-  FaInstagram,
-  FaFacebook,
-  FaHome,
-  FaPlay,
-  FaCalendar,
-} from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 
-import { CallToAction, BannerTwo, Blog, Footer, Container } from "./styles";
-import ioga from "../../assets/ioga.jpg";
+import { CallToAction, BannerTwo, Footer, Container } from "./styles";
 import avp from "../../assets/avp.png";
 import scholl from "../../assets/escola.png";
 
@@ -22,6 +11,7 @@ import NavBar from "./internals/NavBar";
 import NavBarBottom from "./internals/NavBarBottom";
 import Banner from "./internals/Banner";
 import Newsletter from "./internals/Newsletter";
+import Blog from "./internals/Blog";
 
 const Home = () => {
   return (
@@ -31,87 +21,11 @@ const Home = () => {
       <NavBarBottom />
       <Banner title="Bem-vindo ao Instituto de Cultura Hindu Naradeva Shala" />
       <Newsletter />
-      <Blog>
-        <ul>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-        </ul>
-      </Blog>
-      <BannerTwo />
-      <Blog>
-        <ul>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-          <li>
-            <img src={ioga} alt="Ioga" />
-            <h1>Formação e Aprimoramentoem Yoga - São Paulo / SP</h1>
-            <p>
-              C u r s o L i v r e d e F o r m a ç ã o e Aprimoramento em Yoga e
-              Pós-Graduação Lato Sensu em Yoga (MEC) - Nova turma em março de
-              2019. Vagas limitadas
-            </p>
-          </li>
-        </ul>
-      </Blog>
+      <Blog />
+      <BannerTwo>
+        <h1>Banner de curso</h1>
+      </BannerTwo>
+      <Blog />
       <CallToAction>
         <section className="top-action">
           <h1>Oferecer aqui um Ebook</h1>
