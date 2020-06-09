@@ -1,8 +1,9 @@
 import React from "react";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-import avp from "../../../../assets/avp.png";
-import scholl from "../../../../assets/escola.png";
+import avp from "../../assets/avp.png";
+import scholl from "../../assets/escola.png";
 
 import { Container } from "./styles";
 
@@ -37,7 +38,7 @@ const Footer = () => {
       <div className="footer-about">
         <div className="align-footer">
           <h1>Quem somos</h1>
-          <a href="!#">Quem somos</a>
+          <Link to="/about-us">Quem somos</Link>
           <a href="!#">Termos de Uso</a>
           <a href="!#">Termos de Privacidade</a>
           <a href="!#">Propriedade Intelectual</a>

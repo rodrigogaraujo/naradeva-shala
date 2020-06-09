@@ -2,7 +2,7 @@ import React from "react";
 import { FaHome, FaPlay, FaCalendar } from "react-icons/fa";
 import { RiGlobalLine } from "react-icons/ri";
 
-import logo from "../../../../assets/logo.png";
+import logo from "../../assets/logo.png";
 import { Container } from "./styles";
 
 const NavBar = () => {

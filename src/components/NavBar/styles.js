@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import bg from "../../../../assets/bgHeader.png";
+import bg from "../../assets/bgHeader.png";
 
 export const Container = styled.div`
   .content {

@@ -30,8 +30,9 @@ export const Container = styled.footer`
     }
   }
   .footer-social {
-    flex-basis: 33%;
+    flex-basis: calc(33% - 50px);
     display: flex;
+    margin-left: 50px;
     flex-direction: column;
     align-items: center;
 

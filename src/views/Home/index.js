@@ -2,14 +2,14 @@ import React from "react";
 
 import { BannerTwo, Container } from "./styles";
 
-import TopBar from "./internals/TopBar";
-import NavBar from "./internals/NavBar";
+import TopBar from "../../components/TopBar";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 import NavBarBottom from "./internals/NavBarBottom";
 import Banner from "./internals/Banner";
 import Newsletter from "./internals/Newsletter";
 import Blog from "./internals/Blog";
 import CallToAction from "./internals/CallToAction";
-import Footer from "./internals/Footer";
 
 const Home = () => {
   return (
