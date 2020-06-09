@@ -4,11 +4,12 @@ import bg from "../../../../assets/bgHeader.png";
 
 export const Container = styled.div`
   .content {
-    max-width: 1100px;
+    max-width: 1138px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     background-image: url(${bg});
+    background-size: contain;
     height: 160px;
     display: flex;
     justify-content: space-between;
@@ -22,14 +23,13 @@ export const Container = styled.div`
       display: flex;
       margin-right: 30px;
       a {
-        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-decoration: none;
         color: black;
         svg {
-          color: var(--primary);
+          color: var(--icons-color);
           margin-bottom: 8px;
         }
         + a {

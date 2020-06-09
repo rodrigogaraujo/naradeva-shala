@@ -5,7 +5,7 @@ export const Container = styled.section`
   background: var(--primary);
   color: white;
   .content {
-    max-width: 1100px;
+    max-width: 1138px;
     height: 45px;
     margin: 0 auto;
     display: flex;

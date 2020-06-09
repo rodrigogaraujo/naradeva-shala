@@ -10,7 +10,7 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: 80px 20px 0 20px;
     font-weight: 500;
-    color: var(--primary);
+    color: var(--font-color);
     text-align: center;
   }
 `;
