@@ -1,15 +1,16 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FiHome, FiEdit, FiSettings } from "react-icons/fi";
+import { FiHome, FiEdit, FiSettings, FiBell } from "react-icons/fi";
 import JoditEditor from "jodit-react";
 
 import { Container, Sidebar, TobBarDash, Content } from "./styles";
+import img from "../../assets/nutricao.jpg";
 
 const Dashboard = () => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
   const config = {
-    readonly: false, // all options from https://xdsoft.net/jodit/doc/
+    readonly: false,
   };
 
   const handlePreview = () => {};
@@ -28,12 +29,16 @@ const Dashboard = () => {
           <FiEdit size={30} />
           Páginas
         </Link>
+
         <Link to="/dashboard" title="Configurações" className="settings">
           <FiSettings size={30} />
           Configurações
         </Link>
       </Sidebar>
-      <TobBarDash></TobBarDash>
+      <TobBarDash>
+        <FiBell size={25} />
+        <img src={img} alt="Nutrição" />
+      </TobBarDash>
       <Content>
         <form>
           <div className="form-header">
@@ -57,7 +62,18 @@ const Dashboard = () => {
               />
             </div>
             <div className="form-right-side-body">
-              <h1>autor</h1>
+              <span>Autor</span>
+              <div className="author-picture">
+                <div className="picture"></div>
+                <h2>David Clarke</h2>
+              </div>
+              <span>Categoria</span>
+              <input placeholder="Categoria" />
+              <span>Tag</span>
+              <input placeholder="Tags" />
+              <div className="public">
+                <span>Público</span>
+              </div>
             </div>
           </div>
         </form>
