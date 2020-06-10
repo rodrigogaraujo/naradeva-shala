@@ -3,6 +3,7 @@ import styled from "styled-components";
 import bg from "../../assets/bgHeader.png";
 
 export const Container = styled.div`
+  z-index: 9998;
   .content {
     max-width: 1138px;
     width: 100%;
@@ -16,7 +17,6 @@ export const Container = styled.div`
     flex-wrap: wrap;
     a {
       align-self: center;
-      padding-left: 30px;
     }
     .menu-options {
       align-self: flex-end;
@@ -38,10 +38,12 @@ export const Container = styled.div`
       }
     }
 
-    @media screen and (max-width: 910px) {
+    @media screen and (max-width: 1033px) {
       justify-content: center;
+      align-items: center;
       height: 220px;
       padding: 20px;
+      text-align: center;
       img {
         padding-left: 0;
       }

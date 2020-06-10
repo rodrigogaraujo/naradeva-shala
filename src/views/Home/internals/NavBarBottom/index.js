@@ -1,43 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 import { Container } from "./styles";
+import ListMenu from "./internals/ListMenu";
 
 const NavBarBottom = () => {
+  const [visibleMobile, setVisibleMobile] = useState(false);
+  const handleVisibleMobile = () => {
+    setVisibleMobile(!visibleMobile);
+  };
   return (
-    <Container>
-      <div className="content">
-        <li>
-          <a href="!#">Quem somos</a>
-        </li>
-        <li>
-          <a href="!#">Atendimentos e tratamentos</a>
-        </li>
-        <li>
-          <a href="!#">Profissionais</a>
-        </li>
-        <li>
-          <a href="!#">Programação</a>
-        </li>
-        <li>
-          <a href="!#">Cursos</a>
-        </li>
-        <li>
-          <a href="!#">Aula de Yoga</a>
-        </li>
-        <li>
-          <a href="!#">Viagens e Retiros</a>
-        </li>
-        <li>
-          <a href="!#">Artigos</a>
-        </li>
-        <li>
-          <a href="!#">Localização</a>
-        </li>
-        <li>
-          <a href="!#">Fale Conosco</a>
-        </li>
-      </div>
-    </Container>
+    <>
+      <Container isVisible={visibleMobile}>
+        <div className="content">
+          <ListMenu />
+        </div>
+        <div className="menu-mobile">
+          {!visibleMobile ? (
+            <FiMenu size={30} onClick={handleVisibleMobile} />
+          ) : (
+            <FiX size={30} onClick={handleVisibleMobile} />
+          )}
+
+          <div className="list-menu-mobile">
+            <ListMenu />
+          </div>
+        </div>
+      </Container>
+    </>
   );
 };
 export default NavBarBottom;

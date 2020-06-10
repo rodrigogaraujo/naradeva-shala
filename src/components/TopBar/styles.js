@@ -4,6 +4,7 @@ export const Container = styled.section`
   width: 100%;
   background: var(--primary);
   color: white;
+  position: relative;
   .content {
     max-width: 1138px;
     height: 45px;
