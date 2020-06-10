@@ -14,6 +14,7 @@ const Global = createGlobalStyle`
 
     :root{
         --primary: #800C20;
+        --light:#800C20B3;
         --button-blue: #318597;
         --button-gary-light: #727b89;
         --icons-color: #BA4049;

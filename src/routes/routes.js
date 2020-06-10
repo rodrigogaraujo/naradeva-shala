@@ -7,6 +7,7 @@ import AboutUs from "../views/AboutUs";
 import Pages from "../views/Dashboard/views/Pages";
 import Posts from "../views/Dashboard/views/Posts";
 import Users from "../views/Dashboard/views/Users";
+import SignIn from "../views/SignIn";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
       <Route path="/dashboard/pages" component={Pages} />
       <Route path="/dashboard/posts" component={Posts} />
       <Route path="/dashboard/users" component={Users} />
+      <Route path="/sign-in" component={SignIn} />
     </Switch>
   );
 };
