@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { desaturate, shade } from "polished";
 
 export const Container = styled.div``;
-
 export const Content = styled.div`
   max-width: calc(100% - 280px);
   margin-left: 280px;

@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 export const Container = styled.ul`
   width: 100%;
   padding: 10px 20px;
+  margin-top: 5px;
+  border: 1px solid #f1f1f1;
 
   .content {
     max-width: 1138px;
@@ -49,11 +51,14 @@ export const Container = styled.ul`
       display: flex;
     }
     .list-menu-mobile {
-      padding: 30px;
+      @media screen and (max-width: 380px) {
+        padding: 10px;
+      }
       z-index: 9999;
       background-color: var(--primary);
       position: absolute;
       top: 30px;
+      border-radius: 5px;
       list-style: none;
       display: none;
       ${(props) =>
@@ -68,6 +73,10 @@ export const Container = styled.ul`
         font-size: 1.3em;
         &:hover {
           text-decoration: underline;
+        }
+        @media screen and (max-width: 380px) {
+          padding: 10px;
+          font-size: 1em;
         }
       }
     }

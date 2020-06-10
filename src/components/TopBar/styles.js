@@ -25,6 +25,14 @@ export const Container = styled.section`
       }
     }
 
+    @media screen and (max-width: 380px) {
+      width: 100%;
+      padding: 0;
+      .contact {
+        flex-basis: 100%;
+        justify-content: center;
+      }
+    }
     .contact {
       display: flex;
       span {

@@ -10,11 +10,18 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: 0 20px;
     background-image: url(${bg});
+    background-repeat: no-repeat;
     background-size: contain;
     height: 160px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 380px) {
+      img {
+        max-width: 85%;
+        margin-top: 15px;
+      }
+    }
     a {
       align-self: center;
     }

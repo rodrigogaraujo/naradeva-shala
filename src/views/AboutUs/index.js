@@ -5,6 +5,7 @@ import naradeva from "../../assets/naradeva.jpg";
 import TopBar from "../../components/TopBar";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import NavBarBottom from "../../components/NavBarBottom";
 
 import { Container } from "./styles";
 
@@ -13,6 +14,7 @@ const AboutUs = () => {
     <>
       <TopBar />
       <NavBar />
+      <NavBarBottom />
       <Container>
         <section className="title">
           <header>

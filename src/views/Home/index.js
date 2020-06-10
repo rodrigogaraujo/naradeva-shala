@@ -5,7 +5,7 @@ import { BannerTwo, Container } from "./styles";
 import TopBar from "../../components/TopBar";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import NavBarBottom from "./internals/NavBarBottom";
+import NavBarBottom from "../../components/NavBarBottom";
 import Banner from "./internals/Banner";
 import Newsletter from "./internals/Newsletter";
 import Blog from "./internals/Blog";

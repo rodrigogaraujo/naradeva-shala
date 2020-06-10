@@ -8,7 +8,7 @@ export const BannerTwo = styled.div`
   width: 100%;
   margin: 0 auto 20px auto;
   background-image: url(${bg});
-  background-size: 1220px 480px;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
