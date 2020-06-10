@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaHome, FaPlay, FaCalendar } from "react-icons/fa";
 import { RiGlobalLine } from "react-icons/ri";
 
@@ -9,7 +10,9 @@ const NavBar = () => {
   return (
     <Container>
       <div className="content">
-        <img src={logo} alt="Naradeva Shala" />
+        <Link to="/">
+          <img src={logo} alt="Naradeva Shala" />
+        </Link>
         <div className="menu-options">
           <a href="!#">
             <FaHome size={35} />

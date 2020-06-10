@@ -14,7 +14,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    img {
+    a {
       align-self: center;
       padding-left: 30px;
     }
