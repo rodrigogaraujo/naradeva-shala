@@ -6,6 +6,7 @@ export const Content = styled.div`
   max-width: calc(100% - 280px);
   margin-left: 280px;
   padding: 50px;
+  z-index: 99998;
 
   .form-header {
     width: 100%;
@@ -49,6 +50,10 @@ export const Content = styled.div`
     display: flex;
     .form-left-side-body {
       flex-basis: 100%;
+      .editor {
+        z-index: 9998;
+        position: absolute;
+      }
     }
     .form-right-side-body {
     }

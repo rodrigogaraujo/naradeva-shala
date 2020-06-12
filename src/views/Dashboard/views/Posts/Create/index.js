@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import JoditEditor from "jodit-react";
 
 import { Container, Content } from "./styles";
-import NavBar from "../../internals/NavBar";
+import NavBar from "../../../internals/NavBar";
 
 const Dashboard = () => {
   const editor = useRef(null);

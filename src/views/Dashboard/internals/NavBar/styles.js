@@ -10,28 +10,7 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   background: var(--primary);
-
-  .settings {
-    margin-top: auto;
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    display: flex;
-    max-height: 80px;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: ${desaturate(0.3, "#800C20")};
-    span {
-      color: white;
-      font-size: 1.3em;
-      font-weight: 500;
-    }
-  }
   a {
-    margin-top: 8px;
     display: flex;
     align-items: center;
     color: white;
@@ -48,27 +27,35 @@ export const Sidebar = styled.div`
       background: ${desaturate(0.3, "#800C20")};
     }
   }
-`;
-export const TobBarDash = styled.div`
-  width: 100%;
-  max-width: calc(100% - 280px);
-  margin-left: 280px;
-  height: 80px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  svg {
-    margin-right: 10px;
-    color: var(--button-gary-light);
-    cursor: pointer;
-  }
-  img {
-    width: 100%;
+  .logo {
+    display: flex;
+    max-height: 80px;
     height: 100%;
-    max-height: 60px;
-    max-width: 60px;
-    border-radius: 50%;
-    margin-right: 80px;
-    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: ${desaturate(0.3, "#800C20")};
+    span {
+      color: white;
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+  }
+  .settings {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 8px;
+      width: 100%;
+    }
   }
 `;
